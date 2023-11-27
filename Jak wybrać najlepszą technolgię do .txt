@@ -1,0 +1,9 @@
+Jak wybrać najlepszą technolgię do stworzenia aplikacji webowej?
+1. Cel i wymagania - jedne technologie są lepiej przystosowane do konkretnych rodzajów aplikacji
+2. Zasoby - ile masz czasu i osób do pracy
+3. Co potrafisz zrobić - twoje umiejętności
+4. Skalowalność - mały czy duży projekt
+5. Bezpieczeństwo - niektóre technologie mają lepsze zabezpieczenia
+6. Wsparcie społecznościowe - jeśli będziesz miał jakikolwiek problem, duża społeczność technologii na pewno ułatwi ci rozwiązanie go
+7. Przyszłość technologii - z przyszłościową technologią projekt będzie można łatwiej rozwijać
+8. Budżet

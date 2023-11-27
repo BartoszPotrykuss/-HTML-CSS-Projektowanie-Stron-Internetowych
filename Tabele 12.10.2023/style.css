@@ -1,0 +1,14 @@
+*
+{
+    background-color: antiquewhite;
+}
+table ,tr ,td, th
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th, tr, td
+{
+    padding: 10px;
+    text-align: center;
+}

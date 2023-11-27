@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li::after{
+            content: " - Pies";
+            background-color: teal;
+            color: white;
+        }
+        li
+        {
+            text-transform: capitalize;
+
+        }
+        p
+        {
+            direction:rtl;
+            unicode-bidi: bidi-override;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Foksterier</li>
+        <li>Bokser</li>
+        <li>Baset</li>
+
+        <table border="1">
+            <tr>
+                <th>tekst</th>
+                <th>tekst</th>
+                <th>tekst</th>
+            </tr>
+            <tr>
+                <td colspan="3">tekst</td>
+            </tr>
+            <tr>
+                <td>tekst</td>
+                <td>tekst</td>
+                <td rowspan="2">tekst</td>
+            </tr>
+            <tr>
+                <td>tekst</td>
+                <td>tekst</td>
+            </tr>
+        </table>
+
+        <p>Tekst</p>
+    </ul>
+</body>
+</html>

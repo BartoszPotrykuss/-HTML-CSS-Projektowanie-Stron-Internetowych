@@ -1,0 +1,6 @@
+PNG
+kompresja bezstratna ,48-bitów, 16-bitów odcieniów szarości
+JPG
+24-bitowa głębia stratny
+GIF
+256 kolorów
