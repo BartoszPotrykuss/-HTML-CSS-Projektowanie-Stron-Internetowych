@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img
+        {
+            width: 30px;
+            height: 20px;
+        }
+        input[type=button]
+        {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <Form>
+        <b>Formularz rejestracyjny</b>
+        <br><br>
+        Podaj swoje nazwisko <input size="30" autofocus required autocomplete="off" type="text" id="nazwisko">
+        <br><br>
+        Podaj swoje imię: <input size="30" required autocomplete="off"  type="text" id="imie">
+        <br><br>
+        Wpisz kod pocztowy miejscowości, w której mieszkasz:
+        <br><br>
+        <input type="text" name="kod" pattern="[0-9]{2}-[0-9]{3}" required autocomplete="off">
+        <br><br>
+        Wybierz płeć
+        <br><br>
+        Kobieta [ALT+K]<input type="radio" name="plec" id="kobieta" accesskey="K"> 
+        Mężczyzna <input type="radio" name="plec" id="mezczyzna">
+        <br><br>
+        Podaj wiek
+        <input list="wiek" name="wiek">
+        <datalist id="wiek">
+            <option>10-15</option>
+            <option>16-20</option>
+            <option>21-25</option>
+        </datalist>
+        <br><br>
+        Wybierz języki
+        <br><br>
+        <select multiple style="height: 200px;" name="jezyki" id="jezyki">
+            <optgroup label="Języki Słowiańskie">
+                <option value="polski" selected>polski</option>
+                <option value="polski">polski</option>
+                <option value="polski">polski</option>
+            </optgroup>
+            <optgroup label="Języki Słowiańskie">
+                <option value="polski">polski</option>
+                <option value="polski">polski</option>
+                <option value="polski">polski</option>
+            </optgroup>
+            <optgroup label="Języki Słowiańskie">
+                <option value="polski" selected>polski</option>
+                <option value="polski">polski</option>
+                <option value="polski">polski</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <fieldset>
+            <legend>Życiorys</legend>
+            <textarea id="tekst" cols="40" rows="8">Wprowadź swój tekst...</textarea>
+        </fieldset>
+        <br><br>
+        Data wypełnienia formularza <input type="date" name="data" id="data">
+        <br><br>
+        Dołącz plik: <input size="30" type="file" name="plik" >
+        <br><br>
+        Wybierz kolor z palety <input type="color" name="kolor" value="#F00"> 
+        <br><br>
+        Adres e-mail <input type="email" name="email">
+        <br><br>
+        <input type="checkbox" name="opcja" > Zgadzam się na przetwarzanie moich danych osobowych
+        <br><br>
+        <a href="https://www.wp.pl/" target="_blank"><input type="button" value="Do wp.pl" ></a>
+        <input type="reset" value="Wyczyść">
+        <button><img src="kolko.jpg" alt="kolko"></button>
+    </Form>
+</body>
+</html>
