@@ -1,0 +1,4 @@
+Wykorzystując możliwości defniowania różnych elementów formularza zaprojektuj
+ankietę na temat osób, odwiedzających twoją stronę. Ankieta powinna zawierać
+m. in. podstawowe dane osobowe oraz pytania do ankietowanych. Zastanów się
+jakie informacje, chciałbyś uzyskać od odwiedzających witrynę.

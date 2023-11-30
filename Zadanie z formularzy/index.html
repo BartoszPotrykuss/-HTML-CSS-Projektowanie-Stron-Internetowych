@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <h1>Ankieta</h1>
+       <p>Podaj swoje nazwisko</p> <input type="text" id="nazwisko">
+        <p>Podaj swoje imie</p> <input type="text" id="imie">
+        <p>Podaj wiek</p> <input type="number" id="wiek">
+        <p> Adres e-mail</p> <input type="email" name="email" id="email" >
+        <p>Wybierz płeć</p>
+        Mężczyzna <input type="radio" name="plec" id="mezczyzna">
+        Kobieta <input type="radio" name="plec" id="kobieta">
+        Inna <input type="radio" name="inny" id="inny">
+        <p>Jakiej technologii obecnie najczęściej używasz?</p>
+        <select multiple name="technologia" id="technologia">
+            <optgroup label="Front-end">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Inny">Inny</option>
+            </optgroup>
+            <optgroup label="Back-end">
+                <option value="C#">C#</option>
+                <option value="C++">C++</option>
+                <option value="C">C</option>
+                <option value="Java">Java</option>
+                <option value="PHP">PHP</option>
+                <option value="Inny">Inny</option>
+            </optgroup>
+            <optgroup label="Bazy danych">
+                <option value="MS SQL Server">MS SQL Server</option>
+                <option value="MySQL">MySQL</option>
+                <option value="MS Access">MS Access</option>
+            </optgroup>
+
+        </select>
+        <p>Ile miałeś lat gdy zacząłeś się uczyć programowania?</p>
+        <input list="wiekNauki" name="wiekNauki" >
+        <datalist id="wiekNauki">
+            <option>0-15</option>
+            <option>16-20</option>
+            <option>21-26</option>
+            <option>27-40</option>
+            <option>>40</option>
+        </datalist>
+
+        <p>Które z podanych technologii umiesz w stopniu conajmniej podstawowym?</p>
+        <input type="checkbox" name="jezyk" value="C#"> C# <br>
+        <input type="checkbox" name="jezyk" value="C#"> C++ <br>
+        <input type="checkbox" name="jezyk" value="C#"> C <br>
+        <input type="checkbox" name="jezyk" value="C#"> Java <br>
+        <input type="checkbox" name="jezyk" value="C#"> PHP <br>
+        <input type="checkbox" name="jezyk" value="C#"> HTML <br>
+        <input type="checkbox" name="jezyk" value="C#"> JavaScript <br>
+        <input type="checkbox" name="jezyk" value="C#"> CSS <br>
+        <input type="checkbox" name="jezyk" value="C#"> MS SQL Server <br>
+        <input type="checkbox" name="jezyk" value="C#"> MySQL <br>
+        <input type="checkbox" name="jezyk" value="C#"> MS Access <br>
+
+
+        
+
+        <p>Oceń swoją wiedzę z zakresu programowania</p> 1<input type="range" id="ocena">100
+
+        <br><br>
+        <p> Dołącz plik z swoim najlepszym projektem: </p> <input size="30" type="file" name="plik" >
+        <br><br>
+        <fieldset>
+            <legend>Opinia</legend>
+            <textarea id="tekst" cols="40" rows="8">Dodaj swoją opinię o stronie...</textarea>
+        </fieldset>
+        <input type="checkbox" name="opcja" > Zgadzam się na przetwarzanie moich danych osobowych
+       <p> Data wypełnienia formularza </p> <input type="date" name="data" id="data">
+       <br><br> 
+       <input type="button" value="Wyślij" onclick="WyswietlDane()">
+       <input type="reset" value="Resetuj">
+    </form>
+    <div id="dane"></div>
+</body>
+</html>
