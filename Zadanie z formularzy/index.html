@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form>
-        <h1>Ankieta</h1>
-       <p>Podaj swoje nazwisko</p> <input type="text" id="nazwisko">
-        <p>Podaj swoje imie</p> <input type="text" id="imie">
+        <h1>Ankieta dla użytkownika</h1>
+       <p>Podaj swoje nazwisko</p> <input required type="text" id="nazwisko">
+        <p>Podaj swoje imie</p> <input required type="text" id="imie">
         <p>Podaj wiek</p> <input type="number" id="wiek">
-        <p> Adres e-mail</p> <input type="email" name="email" id="email" >
+        <p> Adres e-mail</p> <input required type="email" name="email" id="email" >
         <p>Wybierz płeć</p>
-        Mężczyzna <input type="radio" name="plec" id="mezczyzna">
+        Mężczyzna <input  type="radio" name="plec" id="mezczyzna">
         Kobieta <input type="radio" name="plec" id="kobieta">
         Inna <input type="radio" name="inny" id="inny">
         <p>Jakiej technologii obecnie najczęściej używasz?</p>
@@ -52,17 +53,19 @@
         </datalist>
 
         <p>Które z podanych technologii umiesz w stopniu conajmniej podstawowym?</p>
-        <input type="checkbox" name="jezyk" value="C#"> C# <br>
-        <input type="checkbox" name="jezyk" value="C#"> C++ <br>
-        <input type="checkbox" name="jezyk" value="C#"> C <br>
-        <input type="checkbox" name="jezyk" value="C#"> Java <br>
-        <input type="checkbox" name="jezyk" value="C#"> PHP <br>
-        <input type="checkbox" name="jezyk" value="C#"> HTML <br>
-        <input type="checkbox" name="jezyk" value="C#"> JavaScript <br>
-        <input type="checkbox" name="jezyk" value="C#"> CSS <br>
-        <input type="checkbox" name="jezyk" value="C#"> MS SQL Server <br>
-        <input type="checkbox" name="jezyk" value="C#"> MySQL <br>
-        <input type="checkbox" name="jezyk" value="C#"> MS Access <br>
+        <div id="jezyki">
+            <input type="checkbox" name="jezyk" value="C#"> C# <br>
+            <input type="checkbox" name="jezyk" value="C++"> C++ <br>
+            <input type="checkbox" name="jezyk" value="C"> C <br>
+            <input type="checkbox" name="jezyk" value="Java"> Java <br>
+            <input type="checkbox" name="jezyk" value="PHP"> PHP <br>
+            <input type="checkbox" name="jezyk" value="HTML"> HTML <br>
+            <input type="checkbox" name="jezyk" value="JavaScript"> JavaScript <br>
+            <input type="checkbox" name="jezyk" value="CSS"> CSS <br>
+            <input type="checkbox" name="jezyk" value="MS SQL Server"> MS SQL Server <br>
+            <input type="checkbox" name="jezyk" value="MySQL"> MySQL <br>
+            <input type="checkbox" name="jezyk" value="MS Access"> MS Access <br>
+        </div>
 
 
         
@@ -70,13 +73,13 @@
         <p>Oceń swoją wiedzę z zakresu programowania</p> 1<input type="range" id="ocena">100
 
         <br><br>
-        <p> Dołącz plik z swoim najlepszym projektem: </p> <input size="30" type="file" name="plik" >
+        <p> Dołącz swoje CV (opcjonalnie): </p> <input size="30" type="file" name="plik" id="plik">
         <br><br>
         <fieldset>
-            <legend>Opinia</legend>
+            <legend>Opinia o witrynie</legend>
             <textarea id="tekst" cols="40" rows="8">Dodaj swoją opinię o stronie...</textarea>
         </fieldset>
-        <input type="checkbox" name="opcja" > Zgadzam się na przetwarzanie moich danych osobowych
+        <p> <input type="checkbox" name="opcja" required id="rodo"> Zgadzam się na przetwarzanie moich danych osobowych </p>
        <p> Data wypełnienia formularza </p> <input type="date" name="data" id="data">
        <br><br> 
        <input type="button" value="Wyślij" onclick="WyswietlDane()">
