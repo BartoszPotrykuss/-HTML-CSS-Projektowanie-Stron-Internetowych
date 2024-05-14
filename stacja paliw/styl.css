@@ -1,0 +1,31 @@
+*{
+    font-family: Arial;
+}
+section, aside{
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 50%;
+    height: 410px;
+    float: left;
+}
+header, main{
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    text-align: center;
+}
+.le, .pe {
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 50%;
+    height: 100px;
+    float: left;
+}
+table, td{
+    border: 1px rgb(255, 127, 80) solid;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+a {
+    color: white;
+}
