@@ -1,0 +1,126 @@
+body {
+    background-color: #749d8f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background-color: #5d4b44;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.menu-element {
+    display: flex;
+    flex-direction: row;
+    background-color: #c6685d;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menu-element:last-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    padding-left: 20px;
+    background-color: white;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 66%;
+}
+
+aside {
+    display: flex;
+    flex-basis: 33%;
+    flex-direction: column;
+    background-color: #749d8f;
+    gap: 20px; 
+}
+
+.panel-boczny1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+}
+
+.panel-boczny2 {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.cena {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cena .zlote {
+    font-size: 64px; 
+    line-height: 1;
+}
+
+.cena .grosze {
+    font-size: 32px;
+    align-self: flex-start; 
+    margin-left: 5px;
+}
+
+.cena .waluta {
+    font-size: 32px;
+    align-self: center; 
+    margin-left: 5px;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+input {
+    margin: 10px;
+    height: 5px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #c6685d;
+}
+
+#login {
+    margin: 10px;
+    height: 30px;
+    width: 25%;
+}
+
+#register {
+    background-color: #c6685d;
+    width: 100%;
+    height: 35px;
+    margin: 15px;
+}
+
+#register a {
+    text-decoration: none;
+}
+
+.padding-10 {
+    padding: 10px;
+}
